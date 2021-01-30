@@ -32,7 +32,7 @@ properties:
     description: The generated summary.
     type: string
     example: |-
-      Natural language processing (NLP) is a subfield of Linguistics,
+      Natural Language Processing (NLP) is a subfield of Linguistics,
       Computer Science, and Artificial Intelligence.
   params:
     $ref: ./Params.yaml

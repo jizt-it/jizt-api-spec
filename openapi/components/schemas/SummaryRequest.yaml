@@ -3,11 +3,18 @@ properties:
   source:
     description: The text to be summarized.
     type: string
+    example: |-
+      Natural Language Processing (NLP) is a subfield of Linguistics,
+      Computer science, and Artificial Intelligence concerned with the
+      interactions between computers and human language, in particular
+      how to program computers to process and analyze large amounts of
+      natural language data.
   model:
     description: The model used to generate the summary.
     type: string
     enum:
       - t5-large
+    example: t5-large
   params:
     $ref: './Params.yaml'
 required:
