@@ -8,6 +8,8 @@ lint:
     no-unused-components: warning
 referenceDocs:
   htmlTemplate: ./docs/index.html
+  expandResponses: "200"
+  jsonSampleExpandLevel: 1
   theme:
     colors:
       primary:

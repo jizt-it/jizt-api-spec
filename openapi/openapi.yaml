@@ -2,8 +2,8 @@ openapi: 3.0.3
 info:
   title: JIZT API
   description: >
-    JIZT API provides an easy way of summarizing your text using
-    state-of-the-art NLP models.
+    JIZT API provides an easy way of summarizing your text
+    using state-of-the-art NLP models.
   contact:
     name: Diego Miguel
     url: 'https://www.jizt.it'
@@ -20,8 +20,8 @@ servers:
     description: The API server
 paths:
   /summaries/plain-text:
-    $ref: paths/summaries@plain-text.yaml
-  '/summaries/plain-text/{summaryId}':
-    $ref: 'paths/summaries@plain-text@{summaryId}.yaml'
+    $ref: 'paths/summaries/plain-text.yaml'
+  /summaries/plain-text/{summaryId}:
+    $ref: 'paths/summaries/plain-text@{summaryId}.yaml'
   /healthz:
-    $ref: paths/healthz.yaml
+    $ref: 'paths/summaries/healthz.yaml'
