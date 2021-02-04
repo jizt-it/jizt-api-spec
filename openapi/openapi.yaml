@@ -13,7 +13,7 @@ info:
     name: GPL-3.0 License
     url: 'https://www.gnu.org/licenses/gpl-3.0.en.html'
   x-logo:
-    url: '../images/favicon.png'
+    url: 'https://raw.githubusercontent.com/dmlls/jizt-api-docs/main/images/logo.png'
     altText: JIZT Main Page
 tags:
   - name: Summaries
