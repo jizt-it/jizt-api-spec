@@ -34,5 +34,9 @@ properties:
     example: |-
       Natural Language Processing (NLP) is a subfield of Linguistics,
       Computer Science, and Artificial Intelligence.
+  model:
+    $ref: './Model.yaml'
   params:
-    $ref: ./Params.yaml
+    $ref: './Params.yaml'
+  language:
+    $ref: './Language.yaml'

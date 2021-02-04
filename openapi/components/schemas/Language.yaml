@@ -1,0 +1,5 @@
+description: The language of the text.
+type: string
+enum:
+  - en
+example: en

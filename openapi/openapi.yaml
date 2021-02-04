@@ -1,5 +1,6 @@
 openapi: 3.0.3
 info:
+  version: 0.1.0
   title: JIZT API
   description: >
     JIZT API provides an easy way of summarizing your text
@@ -11,7 +12,9 @@ info:
   license:
     name: GPL-3.0 License
     url: 'https://www.gnu.org/licenses/gpl-3.0.en.html'
-  version: 0.1.0
+  x-logo:
+    url: '../images/favicon.png'
+    altText: JIZT Main Page
 tags:
   - name: Summaries
     description: Summarization tools.
