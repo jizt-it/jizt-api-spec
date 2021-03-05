@@ -1,14 +1,15 @@
 openapi: 3.0.3
 info:
   version: 0.1.0
-  title: JIZT API
+  title: Jizt REST API - AI Summarization
   description: >
-    JIZT API provides an easy way of summarizing your text
+    Jizt API provides an easy way of summarizing your text
     using state-of-the-art NLP models.
+
   contact:
     name: Diego Miguel
     url: 'https://www.jizt.it'
-    email: jizt@diegomiguel.me
+    email: contact@jizt.it
   license:
     name: GPL-3.0 License
     url: 'https://www.gnu.org/licenses/gpl-3.0.en.html'
@@ -17,7 +18,18 @@ info:
     altText: JIZT Main Page
 tags:
   - name: Summaries
-    description: Summarization tools.
+    description: |
+      Requesting a summary is a two-step process.
+
+      First, an HTTP POST request should be made (see "Summarize"). The server will
+      respond with a summary_id for your text.
+
+      Then, periodic HTTP GET requests (see "Get summary") with the previous
+      summary_id should be made until the summary is completed. The response will then
+      contain the summary.
+      
+      Please, keep in mind that the summarization process will likely take several
+      seconds.
 servers:
   - url: 'https://api.jizt.it/v1'
     description: The API server
