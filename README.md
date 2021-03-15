@@ -6,4 +6,4 @@
   </a>
 </p>
 
-<h1 align="center"><a href="https://docs.api.jizt.it">docs.api.jizt.it.</a></h1>
+<h1 align="center"><a href="https://docs.api.jizt.it">docs.api.jizt.it</a></h1>

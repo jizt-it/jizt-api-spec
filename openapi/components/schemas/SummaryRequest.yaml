@@ -4,16 +4,28 @@ properties:
     description: The text to be summarized.
     type: string
     example: |-
-      Natural Language Processing (NLP) is a subfield of Linguistics,
-      Computer science, and Artificial Intelligence concerned with the
-      interactions between computers and human language, in particular
-      how to program computers to process and analyze large amounts of
-      natural language data.
+      Natural Language Processing (NLP) is a subfield of Linguistics, Computer
+      science, and Artificial Intelligence concerned with the interactions between
+      computers and human language, in particular how to program computers to process
+      and analyze large amounts of natural language data.
   model:
     $ref: './Model.yaml'
   params:
     $ref: './Params.yaml'
   language:
     $ref: './Language.yaml'
+  cache:
+    description: >
+      Whether to cache the summary or not. If set to `false`, the summary will be
+      deleted once it has been completed and a `GET` request with its id has been
+      made once. The generated summary is automatically deleted if the `GET` request
+      is not made within 5 minutes after having requested it via `POST`.
+      
+      If set to `true`, future requests with the same source text will be immediate,
+      since the summary will be cached. If the source text contains sensitive
+      information, it is recommended to set this attribute to `false`. If not, setting
+      it to `true` helps speed up the service thanks to caching.
+    type: boolean
+    example: true
 required:
   - source
