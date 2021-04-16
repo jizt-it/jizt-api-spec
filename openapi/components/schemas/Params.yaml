@@ -7,8 +7,8 @@ properties:
       relative to the length of the original text.
     type: number
     format: float
-    minimum: 0.0
-    maximum: 100.0
+    minimum: 0.1
+    maximum: 1.0
     example: 0.4
   relative_min_length:
     description: >
@@ -16,8 +16,8 @@ properties:
       relative to the length of the original text.
     type: number
     format: float
-    minimum: 0.0
-    maximum: 100.0
+    minimum: 0.1
+    maximum: 1.0
     example: 0.1
   do_sample:
     description: >
