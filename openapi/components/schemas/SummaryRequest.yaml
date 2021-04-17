@@ -4,10 +4,9 @@ properties:
     description: The text to be summarized.
     type: string
     example: |-
-      Natural Language Processing (NLP) is a subfield of Linguistics, Computer
-      science, and Artificial Intelligence concerned with the interactions between
-      computers and human language, in particular how to program computers to process
-      and analyze large amounts of natural language data.
+      Jizt makes use of the latest advances in Natural Language Processing (NLP),
+      using state-of-the-art language generation models, such as Google's T5 model, to
+      provide accurate and complete abstractive summaries.
   model:
     $ref: './Model.yaml'
   params:

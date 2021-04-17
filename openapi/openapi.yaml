@@ -21,12 +21,14 @@ tags:
     description: |
       Requesting a summary is a two-step process.
 
-      First, an HTTP POST request should be made (see "Summarize"). The server will
-      respond with a summary_id for your text.
+      First, an HTTP POST request should be made (see
+      ["Summarize"](https://docs.api.jizt.it/#operation/requestSummary)). The server
+      will respond with a `summary_id` for your text.
 
-      Then, periodic HTTP GET requests (see "Get summary") with the previous
-      summary_id should be made until the summary is completed. The response will then
-      contain the summary.
+      Then, periodic HTTP GET requests (see ["Get
+      summary"](https://docs.api.jizt.it/#operation/getSummary)) with the previous
+      `summary_id` should be made until the summary is completed. The response will
+      then contain the summary.
       
       Please, keep in mind that the summarization process will likely take several
       seconds.

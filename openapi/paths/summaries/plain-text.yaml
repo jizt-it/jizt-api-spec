@@ -2,6 +2,61 @@ post:
   operationId: requestSummary
   summary: Summarize
   description: Request a summary of a text.
+  x-codeSamples:
+    - lang: curl
+      source: |
+        curl -X POST -H "Content-Type: application/json" \
+        -d $'{"source": "Jizt makes use of the latest advances in Natural Language Processing (NLP), using state-of-the-art language generation models, such as Google\'s T5 model, to provide accurate and complete abstractive summaries.", "params": {"relative_max_length": 0.5}}' \
+        https://api.jizt.it/v1/summaries/plain-text
+    - lang: Python
+      source: |
+        import requests
+
+        response = requests.post(
+            'https://api.jizt.it/v1/summaries/plain-text',
+            json={
+                'source':
+                    'Jizt makes use of the latest advances in Natural Language '
+                    'Processing (NLP), using state-of-the-art language generation '
+                    'models, such as Google\'s T5 model, to provide accurate and '
+                    'complete abstractive summaries.',
+                'params': {'relative_max_length': 0.5}
+            }
+        )
+        print(response.json())
+    - lang: Dart
+      source: |
+        import 'dart:convert';
+        import 'package:http/http.dart' as http;
+
+        void main() async {
+          final response = await http.post(
+            Uri.parse('https://api.jizt.it/v1/summaries/plain-text'),
+            headers: {'Content-Type': 'application/json'},
+            body: json.encode({
+              'source': 'Jizt makes use of the latest advances in Natural Language '
+                  'Processing (NLP), using state-of-the-art language generation '
+                  'models, such as Google\'s T5 model, to provide accurate and '
+                  'complete abstractive summaries.',
+              'params': {'relative_max_length': 0.5}
+            }),
+          );
+          print(response.body);
+        }
+    - lang: JavaScript
+      source: |
+        fetch(
+          'https://api.jizt.it/v1/summaries/plain-text',
+          {method: 'POST',
+           headers: {'Content-Type': 'application/json'},
+           body: JSON.stringify({
+               source: 'Jizt makes use of the latest advances in Natural Language ' +
+                       'Processing (NLP), using state-of-the-art language generation ' +
+                       'models, such as Google\'s T5 model, to provide accurate and ' +
+                       'complete abstractive summaries.',
+               params: {relative_max_length: 0.5}
+           })}
+        ).then(response => response.json()).then(data => console.log(data));
   tags:
     - Summaries
   requestBody:

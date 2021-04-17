@@ -2,6 +2,29 @@ get:
   operationId: getSummary
   summary: Get summary
   description: Return a summary by id.
+  x-codeSamples:
+    - lang: curl
+      source: |
+          curl https://api.jizt.it/v1/summaries/plain-text/80c83d77259f3c53394ceb67d85f2e0a9d289aeb86ad10ec1384d1ef75188591
+    - lang: Python
+      source: |
+        import requests
+
+        response = requests.get('https://api.jizt.it/v1/summaries/plain-text/80c83d77259f3c53394ceb67d85f2e0a9d289aeb86ad10ec1384d1ef75188591')
+        print(response.json())
+    - lang: Dart
+      source: |
+        import 'package:http/http.dart' as http;
+
+        void main() async {
+          final response = await http.get('https://api.jizt.it/v1/summaries/plain-text/80c83d77259f3c53394ceb67d85f2e0a9d289aeb86ad10ec1384d1ef75188591');
+          print(response.body);
+        }
+    - lang: JavaScript
+      source: |
+        fetch('https://api.jizt.it/v1/summaries/plain-text/80c83d77259f3c53394ceb67d85f2e0a9d289aeb86ad10ec1384d1ef75188591')
+          .then(response => response.json())
+          .then(data => console.log(data));
   tags:
     - Summaries
   parameters:

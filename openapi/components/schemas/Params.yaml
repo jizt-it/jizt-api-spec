@@ -9,7 +9,7 @@ properties:
     format: float
     minimum: 0.1
     maximum: 1.0
-    example: 0.4
+    example: 0.5
   relative_min_length:
     description: >
       The minimum length of the summary to be generated,
@@ -24,7 +24,7 @@ properties:
       Whether or not to use sampling. If set to `false` greedy
       decoding is used.
     type: boolean
-    example: false
+    example: true
   early_stopping:
     description: >
       Whether or not to stop the beam search when at least `num_beams`
@@ -51,7 +51,7 @@ properties:
       keep for top-k-filtering.
     type: integer
     format: int32
-    example: 50
+    example: 4
   top_p:
     description: >
       If set to less than `1`, only the most probable tokens with
