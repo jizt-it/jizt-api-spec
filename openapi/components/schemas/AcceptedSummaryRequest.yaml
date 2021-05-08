@@ -39,3 +39,6 @@ properties:
     $ref: ./Params.yaml
   language:
     $ref: ./Language.yaml
+  warnings:
+    description: The warnings derived from the requested.
+    type: object
