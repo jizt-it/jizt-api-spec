@@ -1,5 +1,5 @@
 description: The model used to generate the summary.
 type: string
 enum:
-  - t5-large
-example: t5-large
+  - t5
+example: t5
