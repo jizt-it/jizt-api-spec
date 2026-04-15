@@ -8,7 +8,7 @@ info:
 
   contact:
     name: Diego Miguel
-    url: 'https://www.jizt.it'
+    url: 'https://jizt-it.github.io/jizt-website/'
     email: contact@jizt.it
   license:
     name: GPL-3.0 License
@@ -29,7 +29,7 @@ tags:
       summary"](https://docs.api.jizt.it/#operation/getSummary)) with the previous
       `summary_id` should be made until the summary is completed. The response will
       then contain the summary.
-      
+
       Please, keep in mind that the summarization process will likely take several
       seconds.
 servers:
